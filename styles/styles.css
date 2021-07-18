@@ -8,7 +8,7 @@ body{
     background: #FFFFFF;
     margin-top: 0;
     margin-left: 0;
-}
+    }
 :root {
     --white-color: white;
     --button-color:#E02C6D;
@@ -271,9 +271,18 @@ footer{
 /*---------------------- 
 mobile devices 
 -------------------------*/
-@media only screen and (Max-width:688px) {
+@media only screen and (Max-width:600px) {
+     
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
     header{
         height: 1250px;
+        width: 100%;
     }
 
     nav{
@@ -305,7 +314,7 @@ mobile devices
     }
     .best-players{
         grid-template-columns: repeat(1, 1fr);
-     
+     margin-left: 180px ;
     }
     .highlights{
         display: flex;
@@ -315,9 +324,16 @@ mobile devices
         position: relative;
     }
     .highlights-info{
-        width: 90%;
-        margin-bottom: 200px;
+        width: 350px;
+        margin-bottom: 250px;
     }
- 
+ footer{
+     width: 40%;
+     margin-right: 400px;
+     margin-bottom: 500px;
+ }
+ .copyright{
+     font-size: 7px;
+ }
 }
         
